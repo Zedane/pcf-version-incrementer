@@ -47,5 +47,5 @@ For some reason the componentes I've beed working on didn't update when importin
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+See [MIT License](LICENSE.md)
 
