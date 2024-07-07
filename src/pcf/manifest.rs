@@ -52,8 +52,17 @@ fn read_xml_file(path: &path::PathBuf) -> Option<(String, usize, usize)> {
     match std::fs::read_to_string(&path) {
         Ok(content) => {
             let mut line_num: usize = 0;
+            let mut control_open = false;
             for line in content.lines() {
                 if line.to_lowercase().contains("<control") {
+                    control_open = true;
+                }
+
+                if line.to_lowercase().contains(">") && control_open {
+                    break;
+                }
+
+                if control_open {
                     if let Some(idx_start) = line.to_lowercase().find("version=") {
                         let substr = &line[idx_start + 8..];
                         let mut char_vec: Vec<char> = Vec::new();
