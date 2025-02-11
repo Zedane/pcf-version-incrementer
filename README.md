@@ -1,7 +1,7 @@
 # PCF Version Incrementer
 
 > [!WARNING]
-> This project is no longer maintained. Visit [https://github.com/Zedane/pcf-version-incrementer-go](https://github.com/Zedane/pcf-version-incrementer-go) instead.
+> This project is no longer maintained. Visit [https://github.com/felixnhs/pcf-version-incrementer-go](https://github.com/felixnhs/pcf-version-incrementer-go) instead.
 
 Simple command line tool for incrementing the [PCF](https://learn.microsoft.com/en-us/power-apps/developer/component-framework/overview)-controls version number.
 
